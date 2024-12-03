@@ -1,0 +1,134 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&family=Nerko+One&display=swap'); */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --marinho: #131730;
+    --cinza-claro: #D3D3D3;
+    --ocre: #C2373F;
+    --coral: #F55B64;
+    --degrade-azul: linear-gradient(to right, #2c2b2b 0%, #26327F 100%);
+    --cor-primaria: #F55B64;
+    --cor-secundaria: #C2373F;
+    --neutro: #F9F9F9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+}
+
+body {
+    background: var(--degrade-azul);
+    background-repeat: no-repeat;
+    font-family: var(--fonte-titulo);
+    color: var(--neutro);   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 440px;
+    padding: 56px; */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 440px;
+    padding: 56px;
+}
+
+h2 { 
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 1.4em;
+    line-height: 2em;
+    text-align: left;
+}
+hr {
+     border: none; 
+    border-bottom: 5px dotted var(--cor-primaria);
+    margin-bottom: 24px;
+    width: 100%;
+   
+ }
+
+/* código omitido */
+
+ul {
+    list-style-type: none;
+    /* width: 100%; */
+}
+ 
+p {
+    font-family: var(--fonte-texto);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.lista-compra {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    
+    margin: 6%;
+    gap: 24px;
+    border-radius: 16px;
+    background-color: var(--neutro);
+    color: var(--ocre);
+} 
+
+
+.input {
+    width: 30vw;
+    padding: 1em;
+    /* border-radius: 12px; */
+}
+
+
+
+#input-item {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border: 1px solid var(--preto);
+    width: 307px;
+}
+
+
+.input-item::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn {
+    background-color: var(--coral);
+    border: solid 1px var(--cor-primaria);
+    padding: 0.8em;
+    border-radius: 12px;
+    color: var(--neutro);
+}
+
+
+.rodape {
+    color: var(--cinza-claro);
+    font-size: 0.7em;
+    text-align: center;
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    
+}
+
+ /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox 
+https://icons.getbootstrap.com/#install  */
